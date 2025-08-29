@@ -1,0 +1,178 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5FFF6;
+  padding-bottom: 84px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Font classes from tailwind.init.css */
+.hind-madurai-regular {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hind-madurai-semibold {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.hind-madurai-bold {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.inter-semibold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.inter-black {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Header styles */
+header {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+nav {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 48px 64px;
+}
+
+@media (min-width: 640px) {
+  nav {
+    flex-direction: row;
+    padding: 24px 64px;
+  }
+}
+
+.nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-left img {
+  height: 50px;
+  width: 50px;
+}
+
+.nav-left .inter-black {
+  color: #006747;
+  margin-left: 10px;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .nav-right {
+    flex-direction: row;
+  }
+}
+
+.count-container {
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 24px;
+}
+
+.heart-count-container,
+.coin-count-container {
+  background-color: rgba(65, 255, 107, 0.1);
+}
+
+.copy-count-container {
+  background-color: #00A63E;
+  color: white;
+}
+
+.count-container span,
+.count-container p {
+  font-size: 16px;
+}
+
+.count-container img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Hero section */
+.hero-section {
+  height: 400px;
+  background: linear-gradient(to right, #013223, #006747, #013223);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .hero-section {
+    height: 239px;
+  }
+}
+
+.hero-section img {
+  width: 92px;
+  height: 92px;
+}
+
+.hero-section h2 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+.hero-section p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
