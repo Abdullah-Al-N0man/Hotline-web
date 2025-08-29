@@ -176,7 +176,6 @@ nav {
   text-align: center;
 }
 
-
 /* Main content */
 main {
   max-width: 1800px;
@@ -244,3 +243,108 @@ main {
   }
 }
 
+/* Card styles */
+.card {
+  background-color: white;
+  width: 380px;
+  padding: 32px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+@media (min-width: 640px) {
+  .card {
+    width: 436px;
+  }
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card figure img {
+  width: 64px;
+  padding: 14px;
+  border-radius: 24px;
+}
+
+.card .fa-heart {
+  cursor: pointer;
+  font-size: 24px;
+  transition: all 0.1s ease-in-out;
+}
+
+.card .fa-heart:hover {
+  color: #f87171;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-info {
+  margin-top: 16px;
+}
+
+.card-info h2 {
+  font-size: 24px;
+}
+
+.card-info p {
+  font-size: 18px;
+  color: #5C5C5C;
+}
+
+.card-number h3 {
+  font-size: 32px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: #F2F2F2;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.card-btn {
+  display: flex;
+  gap: 8px;
+}
+
+.card-btn button {
+  cursor: pointer;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 16px;
+  border: none;
+  transition: all 0.1s ease-in;
+}
+
+.copy-btn {
+  color: #5C5C5C;
+  border: 1px solid #D4D6D5;
+  background-color: white;
+}
+
+.copy-btn:hover {
+  background-color: #eeeeee;
+}
+
+.call-btn {
+  background-color: #00A63E;
+  color: white;
+}
+
+.call-btn:hover {
+  background-color: #008c33;
+}
