@@ -348,3 +348,111 @@ main {
 .call-btn:hover {
   background-color: #008c33;
 }
+
+/* History section */
+.history {
+  margin:0 auto;
+  order: 0;
+  width: 380px;
+  grid-column: span 1;
+  padding: 32px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+@media (min-width: 640px) {
+  .history {
+    width: 432px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .history {
+    order: 2;
+    margin: 0;
+  }
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.history-title i {
+  font-size: 24px;
+}
+
+.history-title p {
+  font-size: 20px;
+}
+
+#history-clear-btn {
+  cursor: pointer;
+  background-color: #00A63E;
+  padding: 12px 36px;
+  border-radius: 24px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  transition: all 0.1s ease-in;
+}
+
+#history-clear-btn:hover {
+  background-color: #008c33;
+}
+
+#history-card-container {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Background colors for card icons */
+.bg-emergency { background-color: #FFE3E2; }
+.bg-police { background-color: #DFEFFF; }
+.bg-fire { background-color: #FFE3E2; }
+.bg-ambulance { background-color: #FFE3E2; }
+.bg-women-child { background-color: #FFE3E2; }
+.bg-corruption { background-color: #FFE3E2; }
+.bg-electricity { background-color: #FFE3E2; }
+.bg-brac { background-color: #ffe2fc; }
+.bg-railway { background-color: #fff6e2; }
+
+/* History card styles */
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FAFAFA;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.history-item-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  max-width: 215px;
+}
+
+.history-item-number {
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #5C5C5C;
+}
+
+.history-item-time {
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
