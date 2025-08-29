@@ -237,9 +237,12 @@ main {
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1750px) {
   #card-container {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card {
+    width: 480px;
   }
 }
 
@@ -254,7 +257,7 @@ main {
 
 @media (min-width: 640px) {
   .card {
-    width: 436px;
+    width: 425px;
   }
 }
 
